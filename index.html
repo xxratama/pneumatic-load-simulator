@@ -1552,26 +1552,33 @@ html&gt;body{padding:0}&lt;/style&gt;
   &lt;section id=&quot;pls-pane-tool&quot; class=&quot;pls-pane&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;pls-tab-tool&quot;&gt;
     &lt;div class=&quot;pls-workspace&quot;&gt;
       &lt;div class=&quot;pls-machine-panel&quot;&gt;
-        &lt;div class=&quot;pls-panel-heading&quot;&gt;&lt;h2&gt;Skema alat&lt;/h2&gt;&lt;span class=&quot;pls-caption&quot;&gt;Detail konsep · tidak berskala&lt;/span&gt;&lt;/div&gt;
+        &lt;div class=&quot;pls-panel-heading&quot;&gt;&lt;h2&gt;Skema alat&lt;/h2&gt;&lt;span class=&quot;pls-caption&quot;&gt;Komponen pada rangka · konsep&lt;/span&gt;&lt;/div&gt;
         &lt;div class=&quot;pls-machine-wrap&quot;&gt;
           &lt;svg class=&quot;pls-machine&quot; viewBox=&quot;0 0 600 385&quot; role=&quot;img&quot; aria-labelledby=&quot;pls-machine-title pls-machine-desc&quot;&gt;
             &lt;title id=&quot;pls-machine-title&quot;&gt;Rangka dan aktuator pneumatik di atas timbangan&lt;/title&gt;
-            &lt;desc id=&quot;pls-machine-desc&quot;&gt;Skema detail memperlihatkan piston dalam silinder, batang penekan, load cell, pad, piringan, layar timbangan, rangka dan alas. Udara mengalir dari kompresor ke regulator lalu ke silinder; sinyal load cell melewati HX711 ke mikrokontroler dan kembali ke regulator. Kaki rangka bertumpu di luar piringan. Angka penimbangan langsung tampil pada layar timbangan.&lt;/desc&gt;
+            &lt;desc id=&quot;pls-machine-desc&quot;&gt;Silinder dibaut pada balok atas rangka. Load cell berada pada batang penekan. Regulator, kotak ESP32 DevKit beserta antarmuka regulator, dan HX711 berpenutup dipasang pada panel samping melalui dua braket L. Sinyal load cell dibaca HX711, diterima ESP32, lalu sinyal kendali melewati antarmuka keluaran yang sesuai menuju regulator. Timbangan ditahan pada alas, dengan piringan bebas. Kompresor berada di luar alas. Angka penimbangan langsung tampil pada layar timbangan.&lt;/desc&gt;
             &lt;defs&gt;
               &lt;linearGradient id=&quot;pls-metal&quot; x1=&quot;0&quot; x2=&quot;1&quot;&gt;&lt;stop offset=&quot;0&quot; class=&quot;pls-steel-a&quot;/&gt;&lt;stop offset=&quot;.5&quot; class=&quot;pls-steel-b&quot;/&gt;&lt;stop offset=&quot;1&quot; class=&quot;pls-steel-a&quot;/&gt;&lt;/linearGradient&gt;
               &lt;linearGradient id=&quot;pls-rod-metal&quot; x1=&quot;0&quot; x2=&quot;1&quot;&gt;&lt;stop offset=&quot;0&quot; class=&quot;pls-rod-a&quot;/&gt;&lt;stop offset=&quot;.45&quot; class=&quot;pls-rod-b&quot;/&gt;&lt;stop offset=&quot;1&quot; class=&quot;pls-rod-a&quot;/&gt;&lt;/linearGradient&gt;
               &lt;pattern id=&quot;pls-deck-hatch&quot; width=&quot;7&quot; height=&quot;7&quot; patternUnits=&quot;userSpaceOnUse&quot;&gt;&lt;path d=&quot;M0 7L7 0&quot; class=&quot;pls-deck-hatch&quot;/&gt;&lt;/pattern&gt;
             &lt;/defs&gt;
             &lt;ellipse cx=&quot;299&quot; cy=&quot;357&quot; rx=&quot;253&quot; ry=&quot;13&quot; class=&quot;pls-ground-shadow&quot;/&gt;
-            &lt;rect x=&quot;34&quot; y=&quot;350&quot; width=&quot;538&quot; height=&quot;12&quot; rx=&quot;2&quot; class=&quot;pls-base-deck&quot;/&gt;
-            &lt;rect x=&quot;34&quot; y=&quot;354&quot; width=&quot;538&quot; height=&quot;8&quot; fill=&quot;url(#pls-deck-hatch)&quot;/&gt;
+            &lt;rect x=&quot;34&quot; y=&quot;350&quot; width=&quot;371&quot; height=&quot;12&quot; rx=&quot;2&quot; class=&quot;pls-base-deck&quot;/&gt;
+            &lt;rect x=&quot;34&quot; y=&quot;354&quot; width=&quot;371&quot; height=&quot;8&quot; fill=&quot;url(#pls-deck-hatch)&quot;/&gt;
+            &lt;path d=&quot;M416 362H552&quot; class=&quot;pls-compressor-floor&quot;/&gt;
             &lt;path d=&quot;M224 82V255&quot; class=&quot;pls-center-line&quot;/&gt;
-            &lt;path d=&quot;M533 315H565V132H522&quot; class=&quot;pls-air-hose&quot;/&gt;
+            &lt;g id=&quot;pls-panel-mount&quot; aria-label=&quot;Panel samping terpasang dengan dua braket L&quot;&gt;
+              &lt;path d=&quot;M360 109H410V118H373V133H360Z M360 272H410V281H373V296H360Z&quot; class=&quot;pls-mount-bracket&quot;/&gt;
+              &lt;rect x=&quot;405&quot; y=&quot;102&quot; width=&quot;130&quot; height=&quot;185&quot; rx=&quot;4&quot; class=&quot;pls-mount-panel&quot;/&gt;
+              &lt;path d=&quot;M409 107H531M409 282H531&quot; class=&quot;pls-panel-edge&quot;/&gt;
+              &lt;g class=&quot;pls-bolt&quot;&gt;&lt;circle cx=&quot;365&quot; cy=&quot;119&quot; r=&quot;3&quot;/&gt;&lt;circle cx=&quot;365&quot; cy=&quot;285&quot; r=&quot;3&quot;/&gt;&lt;circle cx=&quot;411&quot; cy=&quot;110&quot; r=&quot;2.5&quot;/&gt;&lt;circle cx=&quot;529&quot; cy=&quot;110&quot; r=&quot;2.5&quot;/&gt;&lt;circle cx=&quot;411&quot; cy=&quot;279&quot; r=&quot;2.5&quot;/&gt;&lt;circle cx=&quot;529&quot; cy=&quot;279&quot; r=&quot;2.5&quot;/&gt;&lt;/g&gt;
+            &lt;/g&gt;
+            &lt;path d=&quot;M533 327H565V132H522&quot; class=&quot;pls-air-hose&quot;/&gt;
             &lt;path d=&quot;M419 132H398V105H257&quot; class=&quot;pls-air-hose&quot;/&gt;
             &lt;path d=&quot;M257 146H297V166M470 156V171&quot; class=&quot;pls-exhaust-hose&quot;/&gt;
             &lt;path d=&quot;M291 166H303M293 170H301M295 174H299M464 170H476M466 174H474&quot; class=&quot;pls-exhaust-mark&quot;/&gt;
             &lt;path id=&quot;pls-loadcell-signal&quot; d=&quot;M245 218H399V260H415&quot; class=&quot;pls-feedback-wire&quot;/&gt;
-            &lt;path d=&quot;M469 246V231M504 179V165H502V156&quot; class=&quot;pls-feedback-wire&quot;/&gt;
+            &lt;path d=&quot;M469 246V219M504 191V165H502V156&quot; class=&quot;pls-feedback-wire&quot;/&gt;
             &lt;path d=&quot;M560 208L565 202L570 208M343 100L337 105L343 110&quot; class=&quot;pls-air-direction&quot;/&gt;
             &lt;path d=&quot;M402 255L407 260L402 265M464 241L469 236L474 241&quot; class=&quot;pls-signal-direction&quot;/&gt;
             &lt;rect x=&quot;76&quot; y=&quot;59&quot; width=&quot;19&quot; height=&quot;279&quot; rx=&quot;2&quot; class=&quot;pls-frame-metal&quot;/&gt;
@@ -1616,6 +1623,12 @@ html&gt;body{padding:0}&lt;/style&gt;
             &lt;path d=&quot;M256 314H294M256 318H285&quot; class=&quot;pls-scale-detail&quot;/&gt;
             &lt;rect x=&quot;145&quot; y=&quot;326&quot; width=&quot;23&quot; height=&quot;24&quot; rx=&quot;2&quot; class=&quot;pls-contact-pad&quot;/&gt;
             &lt;rect x=&quot;281&quot; y=&quot;326&quot; width=&quot;23&quot; height=&quot;24&quot; rx=&quot;2&quot; class=&quot;pls-contact-pad&quot;/&gt;
+            &lt;g id=&quot;pls-scale-stoppers&quot; aria-label=&quot;Stopper kaki timbangan pada alas rangka&quot;&gt;
+              &lt;path d=&quot;M135 350V337H143V345H151V350Z M314 350V337H306V345H298V350Z&quot; class=&quot;pls-mount-bracket&quot;/&gt;
+              &lt;g class=&quot;pls-bolt&quot;&gt;&lt;circle cx=&quot;139&quot; cy=&quot;347&quot; r=&quot;2&quot;/&gt;&lt;circle cx=&quot;310&quot; cy=&quot;347&quot; r=&quot;2&quot;/&gt;&lt;/g&gt;
+            &lt;/g&gt;
+            &lt;path d=&quot;M417 150H429V164H417Z M513 150H525V164H513Z&quot; class=&quot;pls-mount-bracket&quot;/&gt;
+            &lt;g class=&quot;pls-bolt&quot;&gt;&lt;circle cx=&quot;423&quot; cy=&quot;160&quot; r=&quot;2&quot;/&gt;&lt;circle cx=&quot;519&quot; cy=&quot;160&quot; r=&quot;2&quot;/&gt;&lt;/g&gt;
             &lt;rect x=&quot;419&quot; y=&quot;113&quot; width=&quot;103&quot; height=&quot;43&quot; rx=&quot;6&quot; class=&quot;pls-regulator&quot;/&gt;
             &lt;circle cx=&quot;441&quot; cy=&quot;135&quot; r=&quot;11&quot; class=&quot;pls-gauge-face&quot;/&gt;&lt;path id=&quot;pls-gauge-needle&quot; d=&quot;M441 135L439 127&quot; class=&quot;pls-gauge-needle&quot;/&gt;
             &lt;path d=&quot;M435 129L433 127M447 129L449 127M441 124V127&quot; class=&quot;pls-gauge-tick&quot;/&gt;
@@ -1623,29 +1636,41 @@ html&gt;body{padding:0}&lt;/style&gt;
             &lt;text id=&quot;pls-regulator-digital&quot; x=&quot;485&quot; y=&quot;139&quot; text-anchor=&quot;middle&quot; class=&quot;pls-small-digital&quot;&gt;0,00 bar&lt;/text&gt;
             &lt;rect x=&quot;414&quot; y=&quot;128&quot; width=&quot;8&quot; height=&quot;8&quot; rx=&quot;2&quot; class=&quot;pls-pipe-fitting&quot;/&gt;
             &lt;rect x=&quot;519&quot; y=&quot;128&quot; width=&quot;8&quot; height=&quot;8&quot; rx=&quot;2&quot; class=&quot;pls-pipe-fitting&quot;/&gt;
-            &lt;rect x=&quot;415&quot; y=&quot;179&quot; width=&quot;111&quot; height=&quot;52&quot; rx=&quot;6&quot; class=&quot;pls-controller&quot;/&gt;
-            &lt;rect x=&quot;423&quot; y=&quot;190&quot; width=&quot;68&quot; height=&quot;23&quot; rx=&quot;3&quot; class=&quot;pls-digital-screen&quot;/&gt;
-            &lt;text id=&quot;pls-controller-digital&quot; x=&quot;457&quot; y=&quot;205&quot; text-anchor=&quot;middle&quot; class=&quot;pls-small-digital&quot;&gt;20,0 kg&lt;/text&gt;
-            &lt;circle cx=&quot;510&quot; cy=&quot;190&quot; r=&quot;3&quot; class=&quot;pls-controller-button&quot;/&gt;
-            &lt;circle cx=&quot;510&quot; cy=&quot;205&quot; r=&quot;6&quot; class=&quot;pls-control-knob&quot;/&gt;
-            &lt;path d=&quot;M430 220H482M510 200V205&quot; class=&quot;pls-scale-detail&quot;/&gt;
+            &lt;g id=&quot;pls-esp32-controller&quot; aria-label=&quot;ESP32 DevKit dan antarmuka regulator dalam kotak panel&quot;&gt;
+              &lt;rect x=&quot;415&quot; y=&quot;179&quot; width=&quot;111&quot; height=&quot;52&quot; rx=&quot;6&quot; class=&quot;pls-controller&quot;/&gt;
+              &lt;rect x=&quot;425&quot; y=&quot;184&quot; width=&quot;91&quot; height=&quot;39&quot; rx=&quot;3&quot; class=&quot;pls-controller-window&quot;/&gt;
+              &lt;rect x=&quot;430&quot; y=&quot;185&quot; width=&quot;45&quot; height=&quot;36&quot; rx=&quot;2&quot; class=&quot;pls-esp-board&quot;/&gt;
+              &lt;path d=&quot;M438 188H444V191H450V188H456V191H462&quot; class=&quot;pls-chip-pins&quot;/&gt;
+              &lt;rect x=&quot;435&quot; y=&quot;194&quot; width=&quot;36&quot; height=&quot;22&quot; rx=&quot;2&quot; class=&quot;pls-esp-module&quot;/&gt;
+              &lt;text id=&quot;pls-controller-digital&quot; x=&quot;452&quot; y=&quot;209&quot; text-anchor=&quot;middle&quot; class=&quot;pls-small-digital pls-board-label&quot;&gt;ESP32&lt;/text&gt;
+              &lt;path d=&quot;M426 193H430M426 198H430M426 203H430M426 208H430M426 213H430M475 193H479M475 198H479M475 203H479M475 208H479M475 213H479&quot; class=&quot;pls-chip-pins&quot;/&gt;
+              &lt;rect x=&quot;446&quot; y=&quot;218&quot; width=&quot;12&quot; height=&quot;8&quot; rx=&quot;1&quot; class=&quot;pls-pipe-fitting&quot;/&gt;
+              &lt;rect x=&quot;485&quot; y=&quot;191&quot; width=&quot;30&quot; height=&quot;28&quot; rx=&quot;2&quot; class=&quot;pls-hx711-board&quot;/&gt;
+              &lt;text x=&quot;500&quot; y=&quot;208&quot; text-anchor=&quot;middle&quot; class=&quot;pls-small-digital pls-board-label&quot;&gt;IF&lt;/text&gt;
+              &lt;path d=&quot;M475 203H485M469 224V219&quot; class=&quot;pls-feedback-wire&quot;/&gt;
+              &lt;g class=&quot;pls-bolt&quot;&gt;&lt;circle cx=&quot;420&quot; cy=&quot;184&quot; r=&quot;2&quot;/&gt;&lt;circle cx=&quot;521&quot; cy=&quot;184&quot; r=&quot;2&quot;/&gt;&lt;circle cx=&quot;420&quot; cy=&quot;226&quot; r=&quot;2&quot;/&gt;&lt;circle cx=&quot;521&quot; cy=&quot;226&quot; r=&quot;2&quot;/&gt;&lt;/g&gt;
+            &lt;/g&gt;
+            &lt;rect x=&quot;411&quot; y=&quot;242&quot; width=&quot;119&quot; height=&quot;37&quot; rx=&quot;3&quot; class=&quot;pls-electronics-cover&quot;/&gt;
             &lt;rect x=&quot;415&quot; y=&quot;246&quot; width=&quot;111&quot; height=&quot;28&quot; rx=&quot;4&quot; class=&quot;pls-hx711-board&quot;/&gt;
             &lt;rect x=&quot;436&quot; y=&quot;252&quot; width=&quot;17&quot; height=&quot;15&quot; rx=&quot;2&quot; class=&quot;pls-chip&quot;/&gt;
             &lt;path d=&quot;M431 254H436M431 258H436M431 263H436M453 254H458M453 258H458M453 263H458&quot; class=&quot;pls-chip-pins&quot;/&gt;
             &lt;text x=&quot;490&quot; y=&quot;264&quot; text-anchor=&quot;middle&quot; class=&quot;pls-small-digital&quot;&gt;HX711&lt;/text&gt;
+            &lt;g class=&quot;pls-bolt&quot;&gt;&lt;circle cx=&quot;418&quot; cy=&quot;249&quot; r=&quot;1.5&quot;/&gt;&lt;circle cx=&quot;523&quot; cy=&quot;249&quot; r=&quot;1.5&quot;/&gt;&lt;circle cx=&quot;418&quot; cy=&quot;271&quot; r=&quot;1.5&quot;/&gt;&lt;circle cx=&quot;523&quot; cy=&quot;271&quot; r=&quot;1.5&quot;/&gt;&lt;/g&gt;
+            &lt;g id=&quot;pls-external-compressor&quot; transform=&quot;translate(0 12)&quot; aria-label=&quot;Kompresor terpisah dari rangka&quot;&gt;
             &lt;rect x=&quot;420&quot; y=&quot;300&quot; width=&quot;113&quot; height=&quot;33&quot; rx=&quot;16&quot; class=&quot;pls-compressor&quot;/&gt;
             &lt;rect x=&quot;446&quot; y=&quot;282&quot; width=&quot;49&quot; height=&quot;18&quot; rx=&quot;4&quot; class=&quot;pls-controller&quot;/&gt;
             &lt;path d=&quot;M454 285V296M461 285V296M468 285V296M475 285V296M482 285V296&quot; class=&quot;pls-motor-fin&quot;/&gt;
             &lt;circle cx=&quot;439&quot; cy=&quot;341&quot; r=&quot;9&quot; class=&quot;pls-contact-pad&quot;/&gt;&lt;circle cx=&quot;514&quot; cy=&quot;341&quot; r=&quot;9&quot; class=&quot;pls-contact-pad&quot;/&gt;
             &lt;circle cx=&quot;439&quot; cy=&quot;341&quot; r=&quot;3&quot; class=&quot;pls-bolt&quot;/&gt;&lt;circle cx=&quot;514&quot; cy=&quot;341&quot; r=&quot;3&quot; class=&quot;pls-bolt&quot;/&gt;
             &lt;rect x=&quot;527&quot; y=&quot;311&quot; width=&quot;10&quot; height=&quot;8&quot; rx=&quot;2&quot; class=&quot;pls-pipe-fitting&quot;/&gt;
-            &lt;g class=&quot;pls-device-number&quot;&gt;&lt;circle cx=&quot;282&quot; cy=&quot;94&quot; r=&quot;12&quot;/&gt;&lt;text x=&quot;282&quot; y=&quot;99&quot;&gt;1&lt;/text&gt;&lt;circle cx=&quot;270&quot; cy=&quot;218&quot; r=&quot;12&quot;/&gt;&lt;text x=&quot;270&quot; y=&quot;223&quot;&gt;2&lt;/text&gt;&lt;circle cx=&quot;340&quot; cy=&quot;289&quot; r=&quot;12&quot;/&gt;&lt;text x=&quot;340&quot; y=&quot;294&quot;&gt;3&lt;/text&gt;&lt;circle cx=&quot;548&quot; cy=&quot;112&quot; r=&quot;12&quot;/&gt;&lt;text x=&quot;548&quot; y=&quot;117&quot;&gt;4&lt;/text&gt;&lt;circle cx=&quot;548&quot; cy=&quot;202&quot; r=&quot;12&quot;/&gt;&lt;text x=&quot;548&quot; y=&quot;207&quot;&gt;5&lt;/text&gt;&lt;circle cx=&quot;548&quot; cy=&quot;323&quot; r=&quot;12&quot;/&gt;&lt;text x=&quot;548&quot; y=&quot;328&quot;&gt;6&lt;/text&gt;&lt;circle cx=&quot;548&quot; cy=&quot;260&quot; r=&quot;12&quot;/&gt;&lt;text x=&quot;548&quot; y=&quot;265&quot;&gt;7&lt;/text&gt;&lt;circle cx=&quot;51&quot; cy=&quot;195&quot; r=&quot;12&quot;/&gt;&lt;text x=&quot;51&quot; y=&quot;200&quot;&gt;8&lt;/text&gt;&lt;/g&gt;
+            &lt;/g&gt;
+            &lt;g class=&quot;pls-device-number&quot;&gt;&lt;circle cx=&quot;282&quot; cy=&quot;94&quot; r=&quot;12&quot;/&gt;&lt;text x=&quot;282&quot; y=&quot;99&quot;&gt;1&lt;/text&gt;&lt;circle cx=&quot;270&quot; cy=&quot;218&quot; r=&quot;12&quot;/&gt;&lt;text x=&quot;270&quot; y=&quot;223&quot;&gt;2&lt;/text&gt;&lt;circle cx=&quot;340&quot; cy=&quot;289&quot; r=&quot;12&quot;/&gt;&lt;text x=&quot;340&quot; y=&quot;294&quot;&gt;3&lt;/text&gt;&lt;circle cx=&quot;548&quot; cy=&quot;112&quot; r=&quot;12&quot;/&gt;&lt;text x=&quot;548&quot; y=&quot;117&quot;&gt;4&lt;/text&gt;&lt;circle cx=&quot;548&quot; cy=&quot;202&quot; r=&quot;12&quot;/&gt;&lt;text x=&quot;548&quot; y=&quot;207&quot;&gt;5&lt;/text&gt;&lt;circle cx=&quot;548&quot; cy=&quot;335&quot; r=&quot;12&quot;/&gt;&lt;text x=&quot;548&quot; y=&quot;340&quot;&gt;6&lt;/text&gt;&lt;circle cx=&quot;548&quot; cy=&quot;260&quot; r=&quot;12&quot;/&gt;&lt;text x=&quot;548&quot; y=&quot;265&quot;&gt;7&lt;/text&gt;&lt;circle cx=&quot;51&quot; cy=&quot;195&quot; r=&quot;12&quot;/&gt;&lt;text x=&quot;51&quot; y=&quot;200&quot;&gt;8&lt;/text&gt;&lt;/g&gt;
           &lt;/svg&gt;
           &lt;output class=&quot;pls-scale-lcd&quot; aria-label=&quot;Angka penimbangan pada layar timbangan&quot; aria-live=&quot;off&quot;&gt;&lt;span id=&quot;pls-scale-digital&quot;&gt;0,000&lt;/span&gt;&lt;span class=&quot;pls-lcd-unit&quot;&gt;kg&lt;/span&gt;&lt;/output&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;pls-parts&quot;&gt;&lt;span&gt;&lt;b&gt;1&lt;/b&gt;Silinder &amp;amp; piston&lt;/span&gt;&lt;span&gt;&lt;b&gt;2&lt;/b&gt;Load cell &amp;amp; pad&lt;/span&gt;&lt;span&gt;&lt;b&gt;3&lt;/b&gt;Timbangan digital&lt;/span&gt;&lt;span&gt;&lt;b&gt;4&lt;/b&gt;Regulator &amp;amp; manometer&lt;/span&gt;&lt;span&gt;&lt;b&gt;5&lt;/b&gt;Mikrokontroler&lt;/span&gt;&lt;span&gt;&lt;b&gt;6&lt;/b&gt;Kompresor udara&lt;/span&gt;&lt;span&gt;&lt;b&gt;7&lt;/b&gt;Penguat HX711&lt;/span&gt;&lt;span&gt;&lt;b&gt;8&lt;/b&gt;Rangka &amp;amp; alas reaksi&lt;/span&gt;&lt;/div&gt;
+        &lt;div class=&quot;pls-parts&quot;&gt;&lt;span&gt;&lt;b&gt;1&lt;/b&gt;Silinder pada balok&lt;/span&gt;&lt;span&gt;&lt;b&gt;2&lt;/b&gt;Load cell &amp;amp; pad&lt;/span&gt;&lt;span&gt;&lt;b&gt;3&lt;/b&gt;Timbangan pada alas&lt;/span&gt;&lt;span&gt;&lt;b&gt;4&lt;/b&gt;Regulator pada panel&lt;/span&gt;&lt;span&gt;&lt;b&gt;5&lt;/b&gt;ESP32 + antarmuka&lt;/span&gt;&lt;span&gt;&lt;b&gt;6&lt;/b&gt;Kompresor terpisah&lt;/span&gt;&lt;span&gt;&lt;b&gt;7&lt;/b&gt;HX711 berpenutup&lt;/span&gt;&lt;span&gt;&lt;b&gt;8&lt;/b&gt;Rangka &amp;amp; alas reaksi&lt;/span&gt;&lt;/div&gt;
         &lt;div class=&quot;pls-schematic-legend&quot; aria-label=&quot;Legenda jalur skema&quot;&gt;&lt;span&gt;&lt;b class=&quot;pls-air-key&quot;&gt;&lt;/b&gt;Udara tekan&lt;/span&gt;&lt;span&gt;&lt;b class=&quot;pls-signal-key&quot;&gt;&lt;/b&gt;Sinyal kendali&lt;/span&gt;&lt;span&gt;&lt;b class=&quot;pls-exhaust-key&quot;&gt;&lt;/b&gt;Udara buang&lt;/span&gt;&lt;span&gt;&lt;b class=&quot;pls-force-key&quot; aria-hidden=&quot;true&quot;&gt;↓&lt;/b&gt;Gaya &amp;amp; reaksi&lt;/span&gt;&lt;/div&gt;
-        &lt;div class=&quot;pls-frame-note&quot;&gt;&lt;span&gt;Kaki rangka di luar piringan timbangan.&lt;/span&gt;&lt;span id=&quot;pls-schematic-bore&quot;&gt;Piston Ø32 mm · asumsi&lt;/span&gt;&lt;/div&gt;
+        &lt;div class=&quot;pls-frame-note&quot;&gt;&lt;span&gt;Panel dibaut ke tiang · piringan timbangan bebas.&lt;/span&gt;&lt;span id=&quot;pls-schematic-bore&quot;&gt;Piston Ø32 mm · asumsi&lt;/span&gt;&lt;/div&gt;
       &lt;/div&gt;
 
       &lt;div class=&quot;pls-console&quot;&gt;
@@ -1692,7 +1717,7 @@ html&gt;body{padding:0}&lt;/style&gt;
     &lt;div class=&quot;pls-model-description&quot;&gt;&lt;h3&gt;Dasar perhitungan&lt;/h3&gt;&lt;p&gt;Gaya ideal = tekanan × luas piston. Massa ekuivalen = gaya ÷ 9,81. Acuan proposal 20 kg setara 196,2 N.&lt;/p&gt;&lt;p&gt;Kendali memakai umpan balik load cell dalam model sederhana. Kondisi stabil berarti penyimpangan beban terhadap target ≤0,05 kg selama 2 detik. Ini kriteria pencatatan simulasi, bukan batas kelulusan timbangan.&lt;/p&gt;&lt;p&gt;Model belum memperhitungkan gesekan, tekanan sisi balik, berat kepala penekan, kekakuan rangka, dan ketidakpastian pengukuran. Bentuk rangka, ukuran komponen, dan parameter di sini merupakan rancangan konsep.&lt;/p&gt;&lt;/div&gt;
     &lt;button id=&quot;pls-back&quot; type=&quot;button&quot; class=&quot;pls-button cursor-interaction&quot;&gt;Kembali ke alat&lt;/button&gt;
   &lt;/section&gt;
-  &lt;footer class=&quot;pls-footer&quot;&gt;&lt;span&gt;Closed-loop: setpoint → regulator → silinder → load cell → pengendali&lt;/span&gt;&lt;span&gt;20 kg / 196,2 N&lt;/span&gt;&lt;/footer&gt;
+  &lt;footer class=&quot;pls-footer&quot;&gt;&lt;span&gt;Load cell → HX711 → ESP32 → antarmuka → regulator&lt;/span&gt;&lt;span&gt;20 kg / 196,2 N&lt;/span&gt;&lt;/footer&gt;
 &lt;/div&gt;
 
 &lt;style&gt;
@@ -1751,6 +1776,11 @@ html&gt;body{padding:0}&lt;/style&gt;
 #pls-preview .pls-air-direction{fill:none;stroke:var(--pls-accent);stroke-width:1.8}
 #pls-preview .pls-signal-direction{fill:none;stroke:var(--pls-signal);stroke-width:1.8}
 #pls-preview .pls-base-deck{fill:var(--pls-soft);stroke:var(--pls-steel);stroke-width:1}
+#pls-preview .pls-mount-panel{fill:var(--pls-soft);stroke:var(--pls-steel);stroke-width:1.2}
+#pls-preview .pls-mount-bracket{fill:var(--pls-steel-hi);stroke:var(--pls-steel);stroke-width:1}
+#pls-preview .pls-panel-edge{fill:none;stroke:var(--pls-steel-hi);stroke-width:1}
+#pls-preview .pls-electronics-cover{fill:var(--pls-surface);stroke:var(--pls-steel);stroke-width:1}
+#pls-preview .pls-compressor-floor{fill:none;stroke:var(--pls-line);stroke-width:1.2}
 #pls-preview .pls-deck-hatch{fill:none;stroke:var(--pls-line);stroke-width:.7}
 #pls-preview .pls-frame-channel{fill:none;stroke:var(--pls-steel-hi);stroke-width:2}
 #pls-preview .pls-center-line{fill:none;stroke:var(--pls-line);stroke-width:1;stroke-dasharray:5 4}
@@ -1764,6 +1794,9 @@ html&gt;body{padding:0}&lt;/style&gt;
 #pls-preview .pls-control-knob{fill:var(--pls-steel-hi);stroke:var(--pls-muted);stroke-width:1}
 #pls-preview .pls-hx711-board{fill:var(--pls-soft);stroke:var(--pls-signal);stroke-width:1.3}
 #pls-preview .pls-chip{fill:var(--pls-muted)}
+#pls-preview .pls-controller-window{fill:var(--pls-surface);stroke:var(--pls-line);stroke-width:1}
+#pls-preview .pls-esp-board{fill:var(--pls-accent-soft);stroke:var(--pls-accent);stroke-width:1}
+#pls-preview .pls-esp-module{fill:var(--pls-steel-hi);stroke:var(--pls-steel);stroke-width:.7}
 #pls-preview .pls-chip-pins{fill:none;stroke:var(--pls-steel);stroke-width:1}
 #pls-preview .pls-motor-fin{fill:none;stroke:var(--pls-steel);stroke-width:1}
 #pls-preview .pls-scale{fill:var(--pls-soft);stroke:var(--pls-steel);stroke-width:1.5}
@@ -1897,7 +1930,7 @@ html&gt;body{padding:0}&lt;/style&gt;
   restore(window.openai?.widgetState);
 
   function saveState() {
-    const modelContent = {alat:&#x27;Pneumatic Load Simulator&#x27;,mode:&#x27;simulasi&#x27;,targetKg:target,diameterPistonMm:diameter,penyimpanganTimbanganPersen:gain,offsetTimbanganKg:offset,jumlahPembacaan:records.length,hasilTerakhir:records.slice(-4).map(r=&gt;({targetKg:r.target,acuanKg:+r.reference.toFixed(3),indikasiKg:+r.scale.toFixed(3),errorKg:+(r.scale-r.reference).toFixed(3)}))};
+    const modelContent = {alat:&#x27;Pneumatic Load Simulator&#x27;,mode:&#x27;simulasi&#x27;,mikrokontroler:&#x27;ESP32 DevKit&#x27;,targetKg:target,diameterPistonMm:diameter,penyimpanganTimbanganPersen:gain,offsetTimbanganKg:offset,jumlahPembacaan:records.length,hasilTerakhir:records.slice(-4).map(r=&gt;({targetKg:r.target,acuanKg:+r.reference.toFixed(3),indikasiKg:+r.scale.toFixed(3),errorKg:+(r.scale-r.reference).toFixed(3)}))};
     const privateContent = {version:1,target,diameter,gain,offset,tareOffset,cycles,pane,records:records.map(r=&gt;Object.fromEntries(Object.entries(r).map(([k,v])=&gt;[k,typeof v===&#x27;number&#x27;?+v.toFixed(6):v])))};
     if (window.openai?.setWidgetState) window.openai.setWidgetState({modelContent,privateContent}).catch(()=&gt;{});
   }
@@ -1941,7 +1974,7 @@ html&gt;body{padding:0}&lt;/style&gt;
     el(&#x27;command&#x27;).textContent = &#x27;Target ideal &#x27; + fmt(idealPressure(target),2) + &#x27; bar&#x27;;
     el(&#x27;scale-digital&#x27;).textContent = fmt(scale);
     el(&#x27;regulator-digital&#x27;).textContent = fmt(pressure,2) + &#x27; bar&#x27;;
-    el(&#x27;controller-digital&#x27;).textContent = fmt(target,1) + &#x27; kg&#x27;;
+    el(&#x27;controller-digital&#x27;).textContent = &#x27;ESP32&#x27;;
     const travel = mode === &#x27;running&#x27; || mass &gt; .01 ? 10 : 0;
     el(&#x27;moving-head&#x27;).setAttribute(&#x27;transform&#x27;,&#x27;translate(0 &#x27;+travel.toFixed(2)+&#x27;)&#x27;);
     el(&#x27;loadcell-signal&#x27;).setAttribute(&#x27;d&#x27;,&#x27;M245 &#x27;+(218+travel)+&#x27;H399V260H415&#x27;);
@@ -2101,7 +2134,7 @@ html&gt;body{padding:0}&lt;/style&gt;
   el(&#x27;back&#x27;).addEventListener(&#x27;click&#x27;,()=&gt;showPane(&#x27;tool&#x27;));
   window.addEventListener(&#x27;openai:set_globals&#x27;,e=&gt;{const s=e.detail?.globals?.widgetState;if(!s || interval)return;restore(s);scale=offset-tareOffset;syncInputs();updateResults();showPane(pane,false);render();});
   window.addEventListener(&#x27;pagehide&#x27;,stopInterval);
-  new ResizeObserver(()=&gt;{drawChart();const width=root.querySelector(&#x27;.pls-machine&#x27;).getBoundingClientRect().width;const factor=600/Math.max(260,width);root.querySelectorAll(&#x27;.pls-device-number text&#x27;).forEach(node=&gt;node.style.fontSize=(Math.min(26,12*factor))+&#x27;px&#x27;);root.querySelectorAll(&#x27;.pls-small-digital&#x27;).forEach(node=&gt;{node.style.display=width&lt;430?&#x27;none&#x27;:&#x27;&#x27;;});}).observe(root);
+  new ResizeObserver(()=&gt;{drawChart();const width=root.querySelector(&#x27;.pls-machine&#x27;).getBoundingClientRect().width;const factor=600/Math.max(260,width);root.querySelectorAll(&#x27;.pls-device-number text&#x27;).forEach(node=&gt;node.style.fontSize=(Math.min(26,12*factor))+&#x27;px&#x27;);root.querySelectorAll(&#x27;.pls-board-label&#x27;).forEach(node=&gt;node.style.fontSize=(Math.min(16,11*factor))+&#x27;px&#x27;);root.querySelectorAll(&#x27;.pls-small-digital&#x27;).forEach(node=&gt;{node.style.display=width&lt;430?&#x27;none&#x27;:&#x27;&#x27;;});}).observe(root);
   scale=offset-tareOffset;syncInputs();updateResults();showPane(pane,false);render();
   const design={annotations:true};
   if(globalThis.Tweak){const tweak=new Tweak({container:root,onChange:()=&gt;{root.querySelector(&#x27;.pls-parts&#x27;).hidden=!design.annotations;root.querySelector(&#x27;.pls-device-number&#x27;).style.display=design.annotations?&#x27;&#x27;:&#x27;none&#x27;;}});tweak.addToggle(design,&#x27;annotations&#x27;,{label:&#x27;Nama komponen&#x27;});}
