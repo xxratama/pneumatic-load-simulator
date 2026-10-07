@@ -1552,66 +1552,100 @@ html&gt;body{padding:0}&lt;/style&gt;
   &lt;section id=&quot;pls-pane-tool&quot; class=&quot;pls-pane&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;pls-tab-tool&quot;&gt;
     &lt;div class=&quot;pls-workspace&quot;&gt;
       &lt;div class=&quot;pls-machine-panel&quot;&gt;
-        &lt;div class=&quot;pls-panel-heading&quot;&gt;&lt;h2&gt;Rancangan alat&lt;/h2&gt;&lt;span class=&quot;pls-caption&quot;&gt;Skema konsep · tidak berskala&lt;/span&gt;&lt;/div&gt;
+        &lt;div class=&quot;pls-panel-heading&quot;&gt;&lt;h2&gt;Skema alat&lt;/h2&gt;&lt;span class=&quot;pls-caption&quot;&gt;Detail konsep · tidak berskala&lt;/span&gt;&lt;/div&gt;
         &lt;div class=&quot;pls-machine-wrap&quot;&gt;
-          &lt;svg class=&quot;pls-machine&quot; viewBox=&quot;0 0 600 350&quot; role=&quot;img&quot; aria-labelledby=&quot;pls-machine-title pls-machine-desc&quot;&gt;
+          &lt;svg class=&quot;pls-machine&quot; viewBox=&quot;0 0 600 385&quot; role=&quot;img&quot; aria-labelledby=&quot;pls-machine-title pls-machine-desc&quot;&gt;
             &lt;title id=&quot;pls-machine-title&quot;&gt;Rangka dan aktuator pneumatik di atas timbangan&lt;/title&gt;
-            &lt;desc id=&quot;pls-machine-desc&quot;&gt;Kompresor mengalirkan udara melalui regulator ke silinder. Silinder menekan load cell dan pad ke timbangan. Kaki rangka berada di luar piringan timbangan dan bertumpu pada alas yang sama.&lt;/desc&gt;
+            &lt;desc id=&quot;pls-machine-desc&quot;&gt;Skema detail memperlihatkan piston dalam silinder, batang penekan, load cell, pad, piringan, layar timbangan, rangka dan alas. Udara mengalir dari kompresor ke regulator lalu ke silinder; sinyal load cell melewati HX711 ke mikrokontroler dan kembali ke regulator. Kaki rangka bertumpu di luar piringan. Angka penimbangan langsung tampil pada layar timbangan.&lt;/desc&gt;
             &lt;defs&gt;
               &lt;linearGradient id=&quot;pls-metal&quot; x1=&quot;0&quot; x2=&quot;1&quot;&gt;&lt;stop offset=&quot;0&quot; class=&quot;pls-steel-a&quot;/&gt;&lt;stop offset=&quot;.5&quot; class=&quot;pls-steel-b&quot;/&gt;&lt;stop offset=&quot;1&quot; class=&quot;pls-steel-a&quot;/&gt;&lt;/linearGradient&gt;
               &lt;linearGradient id=&quot;pls-rod-metal&quot; x1=&quot;0&quot; x2=&quot;1&quot;&gt;&lt;stop offset=&quot;0&quot; class=&quot;pls-rod-a&quot;/&gt;&lt;stop offset=&quot;.45&quot; class=&quot;pls-rod-b&quot;/&gt;&lt;stop offset=&quot;1&quot; class=&quot;pls-rod-a&quot;/&gt;&lt;/linearGradient&gt;
+              &lt;pattern id=&quot;pls-deck-hatch&quot; width=&quot;7&quot; height=&quot;7&quot; patternUnits=&quot;userSpaceOnUse&quot;&gt;&lt;path d=&quot;M0 7L7 0&quot; class=&quot;pls-deck-hatch&quot;/&gt;&lt;/pattern&gt;
             &lt;/defs&gt;
-            &lt;ellipse cx=&quot;278&quot; cy=&quot;325&quot; rx=&quot;220&quot; ry=&quot;13&quot; class=&quot;pls-ground-shadow&quot;/&gt;
-            &lt;path d=&quot;M34 316H568&quot; class=&quot;pls-base-line&quot;/&gt;
-            &lt;path d=&quot;M469 265V137H256&quot; class=&quot;pls-air-hose&quot;/&gt;
-            &lt;path d=&quot;M467 127V79H256&quot; class=&quot;pls-air-hose&quot;/&gt;
-            &lt;path d=&quot;M217 237H388V189H457&quot; class=&quot;pls-feedback-wire&quot;/&gt;
-            &lt;rect x=&quot;76&quot; y=&quot;59&quot; width=&quot;19&quot; height=&quot;243&quot; rx=&quot;2&quot; class=&quot;pls-frame-metal&quot;/&gt;
-            &lt;rect x=&quot;351&quot; y=&quot;59&quot; width=&quot;19&quot; height=&quot;243&quot; rx=&quot;2&quot; class=&quot;pls-frame-metal&quot;/&gt;
+            &lt;ellipse cx=&quot;299&quot; cy=&quot;357&quot; rx=&quot;253&quot; ry=&quot;13&quot; class=&quot;pls-ground-shadow&quot;/&gt;
+            &lt;rect x=&quot;34&quot; y=&quot;350&quot; width=&quot;538&quot; height=&quot;12&quot; rx=&quot;2&quot; class=&quot;pls-base-deck&quot;/&gt;
+            &lt;rect x=&quot;34&quot; y=&quot;354&quot; width=&quot;538&quot; height=&quot;8&quot; fill=&quot;url(#pls-deck-hatch)&quot;/&gt;
+            &lt;path d=&quot;M224 82V255&quot; class=&quot;pls-center-line&quot;/&gt;
+            &lt;path d=&quot;M533 315H565V132H522&quot; class=&quot;pls-air-hose&quot;/&gt;
+            &lt;path d=&quot;M419 132H398V105H257&quot; class=&quot;pls-air-hose&quot;/&gt;
+            &lt;path d=&quot;M257 146H297V166M470 156V171&quot; class=&quot;pls-exhaust-hose&quot;/&gt;
+            &lt;path d=&quot;M291 166H303M293 170H301M295 174H299M464 170H476M466 174H474&quot; class=&quot;pls-exhaust-mark&quot;/&gt;
+            &lt;path id=&quot;pls-loadcell-signal&quot; d=&quot;M245 218H399V260H415&quot; class=&quot;pls-feedback-wire&quot;/&gt;
+            &lt;path d=&quot;M469 246V231M504 179V165H502V156&quot; class=&quot;pls-feedback-wire&quot;/&gt;
+            &lt;path d=&quot;M560 208L565 202L570 208M343 100L337 105L343 110&quot; class=&quot;pls-air-direction&quot;/&gt;
+            &lt;path d=&quot;M402 255L407 260L402 265M464 241L469 236L474 241&quot; class=&quot;pls-signal-direction&quot;/&gt;
+            &lt;rect x=&quot;76&quot; y=&quot;59&quot; width=&quot;19&quot; height=&quot;279&quot; rx=&quot;2&quot; class=&quot;pls-frame-metal&quot;/&gt;
+            &lt;rect x=&quot;351&quot; y=&quot;59&quot; width=&quot;19&quot; height=&quot;279&quot; rx=&quot;2&quot; class=&quot;pls-frame-metal&quot;/&gt;
             &lt;rect x=&quot;69&quot; y=&quot;48&quot; width=&quot;310&quot; height=&quot;28&quot; rx=&quot;4&quot; class=&quot;pls-frame-metal&quot;/&gt;
-            &lt;rect x=&quot;57&quot; y=&quot;298&quot; width=&quot;58&quot; height=&quot;17&quot; rx=&quot;3&quot; class=&quot;pls-frame-metal&quot;/&gt;
-            &lt;rect x=&quot;332&quot; y=&quot;298&quot; width=&quot;58&quot; height=&quot;17&quot; rx=&quot;3&quot; class=&quot;pls-frame-metal&quot;/&gt;
-            &lt;g class=&quot;pls-bolt&quot;&gt;&lt;circle cx=&quot;86&quot; cy=&quot;62&quot; r=&quot;5&quot;/&gt;&lt;circle cx=&quot;360&quot; cy=&quot;62&quot; r=&quot;5&quot;/&gt;&lt;circle cx=&quot;86&quot; cy=&quot;307&quot; r=&quot;4&quot;/&gt;&lt;circle cx=&quot;360&quot; cy=&quot;307&quot; r=&quot;4&quot;/&gt;&lt;/g&gt;
+            &lt;path d=&quot;M81 84V330M365 84V330&quot; class=&quot;pls-frame-channel&quot;/&gt;
+            &lt;path d=&quot;M95 308L114 333H95M351 308L332 333H351&quot; class=&quot;pls-frame-metal&quot;/&gt;
+            &lt;rect x=&quot;57&quot; y=&quot;333&quot; width=&quot;58&quot; height=&quot;17&quot; rx=&quot;3&quot; class=&quot;pls-frame-metal&quot;/&gt;
+            &lt;rect x=&quot;332&quot; y=&quot;333&quot; width=&quot;58&quot; height=&quot;17&quot; rx=&quot;3&quot; class=&quot;pls-frame-metal&quot;/&gt;
+            &lt;g class=&quot;pls-bolt&quot;&gt;&lt;circle cx=&quot;86&quot; cy=&quot;62&quot; r=&quot;5&quot;/&gt;&lt;circle cx=&quot;360&quot; cy=&quot;62&quot; r=&quot;5&quot;/&gt;&lt;circle cx=&quot;70&quot; cy=&quot;342&quot; r=&quot;3&quot;/&gt;&lt;circle cx=&quot;102&quot; cy=&quot;342&quot; r=&quot;3&quot;/&gt;&lt;circle cx=&quot;344&quot; cy=&quot;342&quot; r=&quot;3&quot;/&gt;&lt;circle cx=&quot;376&quot; cy=&quot;342&quot; r=&quot;3&quot;/&gt;&lt;/g&gt;
+            &lt;rect x=&quot;182&quot; y=&quot;76&quot; width=&quot;84&quot; height=&quot;8&quot; rx=&quot;2&quot; class=&quot;pls-cylinder-cap&quot;/&gt;
             &lt;rect x=&quot;192&quot; y=&quot;77&quot; width=&quot;65&quot; height=&quot;91&quot; rx=&quot;7&quot; class=&quot;pls-cylinder&quot;/&gt;
             &lt;rect x=&quot;187&quot; y=&quot;86&quot; width=&quot;75&quot; height=&quot;13&quot; rx=&quot;2&quot; class=&quot;pls-cylinder-cap&quot;/&gt;
             &lt;rect x=&quot;187&quot; y=&quot;153&quot; width=&quot;75&quot; height=&quot;14&quot; rx=&quot;2&quot; class=&quot;pls-cylinder-cap&quot;/&gt;
             &lt;rect x=&quot;202&quot; y=&quot;99&quot; width=&quot;45&quot; height=&quot;51&quot; rx=&quot;3&quot; class=&quot;pls-cylinder-window&quot;/&gt;
+            &lt;rect id=&quot;pls-pressure-chamber&quot; x=&quot;202&quot; y=&quot;99&quot; width=&quot;45&quot; height=&quot;9&quot; class=&quot;pls-pressure-chamber&quot;/&gt;
+            &lt;rect id=&quot;pls-inner-rod&quot; x=&quot;218&quot; y=&quot;118&quot; width=&quot;13&quot; height=&quot;50&quot; class=&quot;pls-piston-rod&quot;/&gt;
             &lt;rect id=&quot;pls-piston&quot; x=&quot;205&quot; y=&quot;108&quot; width=&quot;39&quot; height=&quot;10&quot; rx=&quot;2&quot; class=&quot;pls-piston&quot;/&gt;
-            &lt;path d=&quot;M201 98V155M248 98V155&quot; class=&quot;pls-tie-rods&quot;/&gt;
+            &lt;path d=&quot;M199 98V155M250 98V155&quot; class=&quot;pls-tie-rods&quot;/&gt;
+            &lt;g class=&quot;pls-bolt&quot;&gt;&lt;circle cx=&quot;195&quot; cy=&quot;92&quot; r=&quot;2&quot;/&gt;&lt;circle cx=&quot;254&quot; cy=&quot;92&quot; r=&quot;2&quot;/&gt;&lt;circle cx=&quot;195&quot; cy=&quot;160&quot; r=&quot;2&quot;/&gt;&lt;circle cx=&quot;254&quot; cy=&quot;160&quot; r=&quot;2&quot;/&gt;&lt;/g&gt;
+            &lt;rect x=&quot;256&quot; y=&quot;101&quot; width=&quot;10&quot; height=&quot;8&quot; rx=&quot;2&quot; class=&quot;pls-pipe-fitting&quot;/&gt;
+            &lt;rect x=&quot;256&quot; y=&quot;142&quot; width=&quot;10&quot; height=&quot;8&quot; rx=&quot;2&quot; class=&quot;pls-pipe-fitting&quot;/&gt;
             &lt;g id=&quot;pls-moving-head&quot;&gt;
               &lt;rect x=&quot;218&quot; y=&quot;157&quot; width=&quot;13&quot; height=&quot;54&quot; class=&quot;pls-piston-rod&quot;/&gt;
-              &lt;rect x=&quot;206&quot; y=&quot;207&quot; width=&quot;37&quot; height=&quot;21&quot; rx=&quot;3&quot; class=&quot;pls-loadcell&quot;/&gt;
-              &lt;circle cx=&quot;216&quot; cy=&quot;217&quot; r=&quot;2&quot; class=&quot;pls-bolt&quot;/&gt;&lt;circle cx=&quot;234&quot; cy=&quot;217&quot; r=&quot;2&quot; class=&quot;pls-bolt&quot;/&gt;
+              &lt;rect x=&quot;211&quot; y=&quot;204&quot; width=&quot;27&quot; height=&quot;5&quot; rx=&quot;2&quot; class=&quot;pls-cylinder-cap&quot;/&gt;
+              &lt;rect x=&quot;204&quot; y=&quot;208&quot; width=&quot;41&quot; height=&quot;20&quot; rx=&quot;3&quot; class=&quot;pls-loadcell&quot;/&gt;
+              &lt;circle cx=&quot;214&quot; cy=&quot;218&quot; r=&quot;2&quot; class=&quot;pls-bolt&quot;/&gt;&lt;circle cx=&quot;235&quot; cy=&quot;218&quot; r=&quot;2&quot; class=&quot;pls-bolt&quot;/&gt;
+              &lt;path d=&quot;M220 214H229V222H220Z&quot; class=&quot;pls-sensor-cutout&quot;/&gt;
               &lt;rect x=&quot;217&quot; y=&quot;228&quot; width=&quot;15&quot; height=&quot;8&quot; class=&quot;pls-piston-rod&quot;/&gt;
-              &lt;rect x=&quot;192&quot; y=&quot;236&quot; width=&quot;65&quot; height=&quot;9&quot; rx=&quot;3&quot; class=&quot;pls-contact-pad&quot;/&gt;
+              &lt;path d=&quot;M215 233H234L247 239H202Z&quot; class=&quot;pls-scale-pan&quot;/&gt;
+              &lt;rect x=&quot;192&quot; y=&quot;239&quot; width=&quot;65&quot; height=&quot;6&quot; rx=&quot;2&quot; class=&quot;pls-contact-pad&quot;/&gt;
             &lt;/g&gt;
-            &lt;g id=&quot;pls-force-arrow&quot; opacity=&quot;0&quot;&gt;&lt;path d=&quot;M284 177V235M275 226L284 237L293 226&quot; class=&quot;pls-force-path&quot;/&gt;&lt;/g&gt;
-            &lt;rect x=&quot;130&quot; y=&quot;260&quot; width=&quot;188&quot; height=&quot;48&quot; rx=&quot;9&quot; class=&quot;pls-scale&quot;/&gt;
+            &lt;g id=&quot;pls-force-arrow&quot; opacity=&quot;0&quot;&gt;&lt;path d=&quot;M284 186V240M276 231L284 241L292 231M118 119V85M112 93L118 85L124 93&quot; class=&quot;pls-force-path&quot;/&gt;&lt;/g&gt;
+            &lt;rect x=&quot;130&quot; y=&quot;260&quot; width=&quot;188&quot; height=&quot;66&quot; rx=&quot;9&quot; class=&quot;pls-scale&quot;/&gt;
             &lt;rect x=&quot;119&quot; y=&quot;255&quot; width=&quot;209&quot; height=&quot;10&quot; rx=&quot;4&quot; class=&quot;pls-scale-pan&quot;/&gt;
-            &lt;rect x=&quot;185&quot; y=&quot;273&quot; width=&quot;91&quot; height=&quot;24&quot; rx=&quot;3&quot; class=&quot;pls-digital-screen&quot;/&gt;
-            &lt;text id=&quot;pls-scale-digital&quot; x=&quot;230&quot; y=&quot;290&quot; text-anchor=&quot;middle&quot; class=&quot;pls-digital-text&quot;&gt;0,000 kg&lt;/text&gt;
-            &lt;circle cx=&quot;162&quot; cy=&quot;285&quot; r=&quot;5&quot; class=&quot;pls-scale-button&quot;/&gt;
-            &lt;rect x=&quot;146&quot; y=&quot;307&quot; width=&quot;22&quot; height=&quot;7&quot; rx=&quot;2&quot; class=&quot;pls-contact-pad&quot;/&gt;
-            &lt;rect x=&quot;282&quot; y=&quot;307&quot; width=&quot;22&quot; height=&quot;7&quot; rx=&quot;2&quot; class=&quot;pls-contact-pad&quot;/&gt;
+            &lt;path d=&quot;M135 269H313&quot; class=&quot;pls-scale-detail&quot;/&gt;
+            &lt;rect x=&quot;138&quot; y=&quot;271&quot; width=&quot;172&quot; height=&quot;37&quot; rx=&quot;4&quot; class=&quot;pls-lcd-bezel&quot;/&gt;
+            &lt;rect x=&quot;140&quot; y=&quot;273&quot; width=&quot;168&quot; height=&quot;33&quot; rx=&quot;3&quot; class=&quot;pls-digital-screen&quot;/&gt;
+            &lt;path d=&quot;M146 276H302&quot; class=&quot;pls-lcd-gloss&quot;/&gt;
+            &lt;rect x=&quot;150&quot; y=&quot;314&quot; width=&quot;25&quot; height=&quot;5&quot; rx=&quot;2&quot; class=&quot;pls-scale-button&quot;/&gt;
+            &lt;rect x=&quot;186&quot; y=&quot;314&quot; width=&quot;25&quot; height=&quot;5&quot; rx=&quot;2&quot; class=&quot;pls-controller-button&quot;/&gt;
+            &lt;path d=&quot;M256 314H294M256 318H285&quot; class=&quot;pls-scale-detail&quot;/&gt;
+            &lt;rect x=&quot;145&quot; y=&quot;326&quot; width=&quot;23&quot; height=&quot;24&quot; rx=&quot;2&quot; class=&quot;pls-contact-pad&quot;/&gt;
+            &lt;rect x=&quot;281&quot; y=&quot;326&quot; width=&quot;23&quot; height=&quot;24&quot; rx=&quot;2&quot; class=&quot;pls-contact-pad&quot;/&gt;
             &lt;rect x=&quot;419&quot; y=&quot;113&quot; width=&quot;103&quot; height=&quot;43&quot; rx=&quot;6&quot; class=&quot;pls-regulator&quot;/&gt;
             &lt;circle cx=&quot;441&quot; cy=&quot;135&quot; r=&quot;11&quot; class=&quot;pls-gauge-face&quot;/&gt;&lt;path id=&quot;pls-gauge-needle&quot; d=&quot;M441 135L439 127&quot; class=&quot;pls-gauge-needle&quot;/&gt;
+            &lt;path d=&quot;M435 129L433 127M447 129L449 127M441 124V127&quot; class=&quot;pls-gauge-tick&quot;/&gt;
             &lt;rect x=&quot;461&quot; y=&quot;126&quot; width=&quot;49&quot; height=&quot;19&quot; rx=&quot;3&quot; class=&quot;pls-digital-screen&quot;/&gt;
             &lt;text id=&quot;pls-regulator-digital&quot; x=&quot;485&quot; y=&quot;139&quot; text-anchor=&quot;middle&quot; class=&quot;pls-small-digital&quot;&gt;0,00 bar&lt;/text&gt;
-            &lt;rect x=&quot;415&quot; y=&quot;171&quot; width=&quot;111&quot; height=&quot;57&quot; rx=&quot;6&quot; class=&quot;pls-controller&quot;/&gt;
-            &lt;rect x=&quot;427&quot; y=&quot;181&quot; width=&quot;62&quot; height=&quot;24&quot; rx=&quot;3&quot; class=&quot;pls-digital-screen&quot;/&gt;
-            &lt;text x=&quot;458&quot; y=&quot;198&quot; text-anchor=&quot;middle&quot; class=&quot;pls-small-digital&quot;&gt;KONTROL&lt;/text&gt;
-            &lt;circle cx=&quot;508&quot; cy=&quot;190&quot; r=&quot;6&quot; class=&quot;pls-controller-button&quot;/&gt;
-            &lt;path d=&quot;M442 228V266&quot; class=&quot;pls-feedback-wire&quot;/&gt;
-            &lt;rect x=&quot;420&quot; y=&quot;269&quot; width=&quot;112&quot; height=&quot;35&quot; rx=&quot;17&quot; class=&quot;pls-compressor&quot;/&gt;
-            &lt;rect x=&quot;444&quot; y=&quot;253&quot; width=&quot;45&quot; height=&quot;17&quot; rx=&quot;4&quot; class=&quot;pls-controller&quot;/&gt;
-            &lt;circle cx=&quot;438&quot; cy=&quot;309&quot; r=&quot;7&quot; class=&quot;pls-contact-pad&quot;/&gt;&lt;circle cx=&quot;512&quot; cy=&quot;309&quot; r=&quot;7&quot; class=&quot;pls-contact-pad&quot;/&gt;
-            &lt;g class=&quot;pls-device-number&quot;&gt;&lt;circle cx=&quot;282&quot; cy=&quot;109&quot; r=&quot;12&quot;/&gt;&lt;text x=&quot;282&quot; y=&quot;114&quot;&gt;1&lt;/text&gt;&lt;circle cx=&quot;266&quot; cy=&quot;220&quot; r=&quot;12&quot;/&gt;&lt;text x=&quot;266&quot; y=&quot;225&quot;&gt;2&lt;/text&gt;&lt;circle cx=&quot;338&quot; cy=&quot;282&quot; r=&quot;12&quot;/&gt;&lt;text x=&quot;338&quot; y=&quot;287&quot;&gt;3&lt;/text&gt;&lt;circle cx=&quot;542&quot; cy=&quot;134&quot; r=&quot;12&quot;/&gt;&lt;text x=&quot;542&quot; y=&quot;139&quot;&gt;4&lt;/text&gt;&lt;circle cx=&quot;546&quot; cy=&quot;196&quot; r=&quot;12&quot;/&gt;&lt;text x=&quot;546&quot; y=&quot;201&quot;&gt;5&lt;/text&gt;&lt;circle cx=&quot;546&quot; cy=&quot;284&quot; r=&quot;12&quot;/&gt;&lt;text x=&quot;546&quot; y=&quot;289&quot;&gt;6&lt;/text&gt;&lt;/g&gt;
+            &lt;rect x=&quot;414&quot; y=&quot;128&quot; width=&quot;8&quot; height=&quot;8&quot; rx=&quot;2&quot; class=&quot;pls-pipe-fitting&quot;/&gt;
+            &lt;rect x=&quot;519&quot; y=&quot;128&quot; width=&quot;8&quot; height=&quot;8&quot; rx=&quot;2&quot; class=&quot;pls-pipe-fitting&quot;/&gt;
+            &lt;rect x=&quot;415&quot; y=&quot;179&quot; width=&quot;111&quot; height=&quot;52&quot; rx=&quot;6&quot; class=&quot;pls-controller&quot;/&gt;
+            &lt;rect x=&quot;423&quot; y=&quot;190&quot; width=&quot;68&quot; height=&quot;23&quot; rx=&quot;3&quot; class=&quot;pls-digital-screen&quot;/&gt;
+            &lt;text id=&quot;pls-controller-digital&quot; x=&quot;457&quot; y=&quot;205&quot; text-anchor=&quot;middle&quot; class=&quot;pls-small-digital&quot;&gt;20,0 kg&lt;/text&gt;
+            &lt;circle cx=&quot;510&quot; cy=&quot;190&quot; r=&quot;3&quot; class=&quot;pls-controller-button&quot;/&gt;
+            &lt;circle cx=&quot;510&quot; cy=&quot;205&quot; r=&quot;6&quot; class=&quot;pls-control-knob&quot;/&gt;
+            &lt;path d=&quot;M430 220H482M510 200V205&quot; class=&quot;pls-scale-detail&quot;/&gt;
+            &lt;rect x=&quot;415&quot; y=&quot;246&quot; width=&quot;111&quot; height=&quot;28&quot; rx=&quot;4&quot; class=&quot;pls-hx711-board&quot;/&gt;
+            &lt;rect x=&quot;436&quot; y=&quot;252&quot; width=&quot;17&quot; height=&quot;15&quot; rx=&quot;2&quot; class=&quot;pls-chip&quot;/&gt;
+            &lt;path d=&quot;M431 254H436M431 258H436M431 263H436M453 254H458M453 258H458M453 263H458&quot; class=&quot;pls-chip-pins&quot;/&gt;
+            &lt;text x=&quot;490&quot; y=&quot;264&quot; text-anchor=&quot;middle&quot; class=&quot;pls-small-digital&quot;&gt;HX711&lt;/text&gt;
+            &lt;rect x=&quot;420&quot; y=&quot;300&quot; width=&quot;113&quot; height=&quot;33&quot; rx=&quot;16&quot; class=&quot;pls-compressor&quot;/&gt;
+            &lt;rect x=&quot;446&quot; y=&quot;282&quot; width=&quot;49&quot; height=&quot;18&quot; rx=&quot;4&quot; class=&quot;pls-controller&quot;/&gt;
+            &lt;path d=&quot;M454 285V296M461 285V296M468 285V296M475 285V296M482 285V296&quot; class=&quot;pls-motor-fin&quot;/&gt;
+            &lt;circle cx=&quot;439&quot; cy=&quot;341&quot; r=&quot;9&quot; class=&quot;pls-contact-pad&quot;/&gt;&lt;circle cx=&quot;514&quot; cy=&quot;341&quot; r=&quot;9&quot; class=&quot;pls-contact-pad&quot;/&gt;
+            &lt;circle cx=&quot;439&quot; cy=&quot;341&quot; r=&quot;3&quot; class=&quot;pls-bolt&quot;/&gt;&lt;circle cx=&quot;514&quot; cy=&quot;341&quot; r=&quot;3&quot; class=&quot;pls-bolt&quot;/&gt;
+            &lt;rect x=&quot;527&quot; y=&quot;311&quot; width=&quot;10&quot; height=&quot;8&quot; rx=&quot;2&quot; class=&quot;pls-pipe-fitting&quot;/&gt;
+            &lt;g class=&quot;pls-device-number&quot;&gt;&lt;circle cx=&quot;282&quot; cy=&quot;94&quot; r=&quot;12&quot;/&gt;&lt;text x=&quot;282&quot; y=&quot;99&quot;&gt;1&lt;/text&gt;&lt;circle cx=&quot;270&quot; cy=&quot;218&quot; r=&quot;12&quot;/&gt;&lt;text x=&quot;270&quot; y=&quot;223&quot;&gt;2&lt;/text&gt;&lt;circle cx=&quot;340&quot; cy=&quot;289&quot; r=&quot;12&quot;/&gt;&lt;text x=&quot;340&quot; y=&quot;294&quot;&gt;3&lt;/text&gt;&lt;circle cx=&quot;548&quot; cy=&quot;112&quot; r=&quot;12&quot;/&gt;&lt;text x=&quot;548&quot; y=&quot;117&quot;&gt;4&lt;/text&gt;&lt;circle cx=&quot;548&quot; cy=&quot;202&quot; r=&quot;12&quot;/&gt;&lt;text x=&quot;548&quot; y=&quot;207&quot;&gt;5&lt;/text&gt;&lt;circle cx=&quot;548&quot; cy=&quot;323&quot; r=&quot;12&quot;/&gt;&lt;text x=&quot;548&quot; y=&quot;328&quot;&gt;6&lt;/text&gt;&lt;circle cx=&quot;548&quot; cy=&quot;260&quot; r=&quot;12&quot;/&gt;&lt;text x=&quot;548&quot; y=&quot;265&quot;&gt;7&lt;/text&gt;&lt;circle cx=&quot;51&quot; cy=&quot;195&quot; r=&quot;12&quot;/&gt;&lt;text x=&quot;51&quot; y=&quot;200&quot;&gt;8&lt;/text&gt;&lt;/g&gt;
           &lt;/svg&gt;
+          &lt;output class=&quot;pls-scale-lcd&quot; aria-label=&quot;Angka penimbangan pada layar timbangan&quot; aria-live=&quot;off&quot;&gt;&lt;span id=&quot;pls-scale-digital&quot;&gt;0,000&lt;/span&gt;&lt;span class=&quot;pls-lcd-unit&quot;&gt;kg&lt;/span&gt;&lt;/output&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;pls-parts&quot;&gt;&lt;span&gt;&lt;b&gt;1&lt;/b&gt;Silinder pneumatik&lt;/span&gt;&lt;span&gt;&lt;b&gt;2&lt;/b&gt;Load cell + pad&lt;/span&gt;&lt;span&gt;&lt;b&gt;3&lt;/b&gt;Timbangan uji&lt;/span&gt;&lt;span&gt;&lt;b&gt;4&lt;/b&gt;Regulator digital&lt;/span&gt;&lt;span&gt;&lt;b&gt;5&lt;/b&gt;Mikrokontroler&lt;/span&gt;&lt;span&gt;&lt;b&gt;6&lt;/b&gt;Kompresor&lt;/span&gt;&lt;/div&gt;
-        &lt;div class=&quot;pls-frame-note&quot;&gt;Kaki rangka bertumpu pada alas, di luar piringan timbangan.&lt;/div&gt;
-        &lt;div class=&quot;pls-response-heading&quot;&gt;&lt;h3&gt;Respons gaya&lt;/h3&gt;&lt;div class=&quot;pls-chart-legend&quot;&gt;&lt;span&gt;&lt;b class=&quot;pls-measured-line&quot;&gt;&lt;/b&gt;Load cell&lt;/span&gt;&lt;span&gt;&lt;b class=&quot;pls-target-line&quot;&gt;&lt;/b&gt;Target&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;svg id=&quot;pls-response&quot; class=&quot;pls-response&quot; role=&quot;img&quot; aria-label=&quot;Grafik gaya load cell dan target terhadap waktu simulasi&quot;&gt;&lt;/svg&gt;
+        &lt;div class=&quot;pls-parts&quot;&gt;&lt;span&gt;&lt;b&gt;1&lt;/b&gt;Silinder &amp;amp; piston&lt;/span&gt;&lt;span&gt;&lt;b&gt;2&lt;/b&gt;Load cell &amp;amp; pad&lt;/span&gt;&lt;span&gt;&lt;b&gt;3&lt;/b&gt;Timbangan digital&lt;/span&gt;&lt;span&gt;&lt;b&gt;4&lt;/b&gt;Regulator &amp;amp; manometer&lt;/span&gt;&lt;span&gt;&lt;b&gt;5&lt;/b&gt;Mikrokontroler&lt;/span&gt;&lt;span&gt;&lt;b&gt;6&lt;/b&gt;Kompresor udara&lt;/span&gt;&lt;span&gt;&lt;b&gt;7&lt;/b&gt;Penguat HX711&lt;/span&gt;&lt;span&gt;&lt;b&gt;8&lt;/b&gt;Rangka &amp;amp; alas reaksi&lt;/span&gt;&lt;/div&gt;
+        &lt;div class=&quot;pls-schematic-legend&quot; aria-label=&quot;Legenda jalur skema&quot;&gt;&lt;span&gt;&lt;b class=&quot;pls-air-key&quot;&gt;&lt;/b&gt;Udara tekan&lt;/span&gt;&lt;span&gt;&lt;b class=&quot;pls-signal-key&quot;&gt;&lt;/b&gt;Sinyal kendali&lt;/span&gt;&lt;span&gt;&lt;b class=&quot;pls-exhaust-key&quot;&gt;&lt;/b&gt;Udara buang&lt;/span&gt;&lt;span&gt;&lt;b class=&quot;pls-force-key&quot; aria-hidden=&quot;true&quot;&gt;↓&lt;/b&gt;Gaya &amp;amp; reaksi&lt;/span&gt;&lt;/div&gt;
+        &lt;div class=&quot;pls-frame-note&quot;&gt;&lt;span&gt;Kaki rangka di luar piringan timbangan.&lt;/span&gt;&lt;span id=&quot;pls-schematic-bore&quot;&gt;Piston Ø32 mm · asumsi&lt;/span&gt;&lt;/div&gt;
       &lt;/div&gt;
 
       &lt;div class=&quot;pls-console&quot;&gt;
@@ -1631,6 +1665,10 @@ html&gt;body{padding:0}&lt;/style&gt;
         &lt;button id=&quot;pls-emergency&quot; type=&quot;button&quot; class=&quot;pls-button pls-danger cursor-interaction&quot;&gt;&lt;i data-lucide=&quot;octagon-alert&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;Henti darurat simulasi&lt;/button&gt;
         &lt;div class=&quot;pls-test-actions&quot;&gt;&lt;button id=&quot;pls-record&quot; type=&quot;button&quot; class=&quot;pls-button cursor-interaction&quot; disabled&gt;&lt;i data-lucide=&quot;bookmark-plus&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;Simpan pembacaan&lt;/button&gt;&lt;button id=&quot;pls-auto&quot; type=&quot;button&quot; class=&quot;pls-button pls-secondary cursor-interaction&quot;&gt;&lt;i data-lucide=&quot;list-checks&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;Uji 4 titik&lt;/button&gt;&lt;/div&gt;
         &lt;div id=&quot;pls-notice&quot; class=&quot;pls-notice&quot; role=&quot;status&quot; aria-live=&quot;polite&quot;&gt;Pilih beban, lalu mulai. Pembacaan dapat disimpan setelah stabil.&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;pls-response-panel&quot;&gt;
+        &lt;div class=&quot;pls-response-heading&quot;&gt;&lt;h3&gt;Respons gaya&lt;/h3&gt;&lt;div class=&quot;pls-chart-legend&quot;&gt;&lt;span&gt;&lt;b class=&quot;pls-measured-line&quot;&gt;&lt;/b&gt;Load cell&lt;/span&gt;&lt;span&gt;&lt;b class=&quot;pls-target-line&quot;&gt;&lt;/b&gt;Target&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;svg id=&quot;pls-response&quot; class=&quot;pls-response&quot; role=&quot;img&quot; aria-label=&quot;Grafik gaya load cell dan target terhadap waktu simulasi&quot;&gt;&lt;/svg&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/section&gt;
@@ -1658,7 +1696,7 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;/div&gt;
 
 &lt;style&gt;
-#pls-preview{--pls-bg:light-dark(#f4f7f7,#10191c);--pls-surface:light-dark(#ffffff,#19262a);--pls-soft:light-dark(#edf3f2,#213339);--pls-text:light-dark(#173238,#e5f0ef);--pls-muted:light-dark(#586f74,#a5bbc0);--pls-line:light-dark(#d8e3e2,#355057);--pls-accent:light-dark(#087e78,#52cfbc);--pls-accent-text:light-dark(#ffffff,#0c2927);--pls-accent-soft:light-dark(#dff3ee,#203e3c);--pls-red:light-dark(#b63939,#ff9494);--pls-red-soft:light-dark(#fff3f1,#3d272c);--pls-steel:light-dark(#8b9ea3,#698088);--pls-steel-hi:light-dark(#d8e3e6,#a4b9be);--pls-rod:light-dark(#c8d4d8,#8c9fa8);--pls-rod-hi:light-dark(#f6fafa,#dce8ea);--pls-shadow:light-dark(#cad8d680,#020b0b70);font:14px/1.45 &quot;Segoe UI&quot;,Arial,sans-serif;color:var(--pls-text);background:var(--pls-bg);border:1px solid var(--pls-line);border-radius:16px;overflow:hidden;max-width:100%;color-scheme:light dark}
+#pls-preview{--pls-bg:light-dark(#f4f7f7,#10191c);--pls-surface:light-dark(#ffffff,#19262a);--pls-soft:light-dark(#edf3f2,#213339);--pls-text:light-dark(#173238,#e5f0ef);--pls-muted:light-dark(#586f74,#a5bbc0);--pls-line:light-dark(#d8e3e2,#355057);--pls-accent:light-dark(#087e78,#52cfbc);--pls-accent-text:light-dark(#ffffff,#0c2927);--pls-accent-soft:light-dark(#dff3ee,#203e3c);--pls-signal:light-dark(#705ca8,#beabe9);--pls-exhaust:light-dark(#a16631,#deb88f);--pls-red:light-dark(#b63939,#ff9494);--pls-red-soft:light-dark(#fff3f1,#3d272c);--pls-steel:light-dark(#8b9ea3,#698088);--pls-steel-hi:light-dark(#d8e3e6,#a4b9be);--pls-rod:light-dark(#c8d4d8,#8c9fa8);--pls-rod-hi:light-dark(#f6fafa,#dce8ea);--pls-shadow:light-dark(#cad8d680,#020b0b70);font:14px/1.45 &quot;Segoe UI&quot;,Arial,sans-serif;color:var(--pls-text);background:var(--pls-bg);border:1px solid var(--pls-line);border-radius:16px;overflow:hidden;max-width:100%;color-scheme:light dark}
 #pls-preview *{box-sizing:border-box}
 #pls-preview [hidden]{display:none!important}
 #pls-preview h1,#pls-preview h2,#pls-preview h3,#pls-preview p{margin:0}
@@ -1681,11 +1719,13 @@ html&gt;body{padding:0}&lt;/style&gt;
 #pls-preview .pls-tab svg{width:16px;height:16px}
 #pls-preview #pls-count{font-size:11px;background:var(--pls-soft);padding:1px 6px;border-radius:5px;font-variant-numeric:tabular-nums}
 #pls-preview .pls-pane{padding:24px}
-#pls-preview .pls-workspace{display:grid;grid-template-columns:minmax(0,1.42fr) minmax(0,1fr);gap:24px}
+#pls-preview .pls-workspace{display:grid;grid-template-columns:minmax(0,1.42fr) minmax(0,1fr);grid-template-areas:&quot;machine console&quot; &quot;response console&quot;;grid-template-rows:auto 1fr;gap:18px 24px;align-items:start}
 #pls-preview .pls-panel-heading{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:14px}
 #pls-preview .pls-caption{font-size:12px;color:var(--pls-muted)}
-#pls-preview .pls-machine-panel{min-width:0}
-#pls-preview .pls-machine-wrap{background:var(--pls-surface);border:1px solid var(--pls-line);border-radius:12px;overflow:hidden}
+#pls-preview .pls-machine-panel{min-width:0;grid-area:machine}
+#pls-preview .pls-machine-wrap{background:var(--pls-surface);border:1px solid var(--pls-line);border-radius:12px;overflow:hidden;position:relative;container-type:inline-size}
+#pls-preview .pls-scale-lcd{position:absolute;left:23.333333%;top:70.909091%;width:28%;height:8.571429%;display:flex;align-items:center;justify-content:center;gap:4px;font-family:ui-monospace,&quot;Consolas&quot;,monospace;font-size:clamp(14px,3.6cqw,24px);font-weight:500;line-height:1;color:var(--pls-text);font-variant-numeric:tabular-nums;white-space:nowrap;pointer-events:none}
+#pls-preview .pls-lcd-unit{font-size:clamp(11px,1.8cqw,13px);font-weight:400}
 #pls-preview .pls-machine{display:block;width:100%;height:auto}
 #pls-preview .pls-steel-a{stop-color:var(--pls-steel)}
 #pls-preview .pls-steel-b{stop-color:var(--pls-steel-hi)}
@@ -1705,7 +1745,27 @@ html&gt;body{padding:0}&lt;/style&gt;
 #pls-preview .pls-contact-pad{fill:var(--pls-muted)}
 #pls-preview .pls-force-path{fill:none;stroke:var(--pls-accent);stroke-width:3}
 #pls-preview .pls-air-hose{fill:none;stroke:var(--pls-accent);stroke-width:3;stroke-linejoin:round}
-#pls-preview .pls-feedback-wire{fill:none;stroke:var(--pls-muted);stroke-width:1.6;stroke-dasharray:4 4}
+#pls-preview .pls-feedback-wire{fill:none;stroke:var(--pls-signal);stroke-width:1.8;stroke-dasharray:4 4;stroke-linejoin:round}
+#pls-preview .pls-exhaust-hose{fill:none;stroke:var(--pls-exhaust);stroke-width:2;stroke-linejoin:round}
+#pls-preview .pls-exhaust-mark{fill:none;stroke:var(--pls-exhaust);stroke-width:1.6}
+#pls-preview .pls-air-direction{fill:none;stroke:var(--pls-accent);stroke-width:1.8}
+#pls-preview .pls-signal-direction{fill:none;stroke:var(--pls-signal);stroke-width:1.8}
+#pls-preview .pls-base-deck{fill:var(--pls-soft);stroke:var(--pls-steel);stroke-width:1}
+#pls-preview .pls-deck-hatch{fill:none;stroke:var(--pls-line);stroke-width:.7}
+#pls-preview .pls-frame-channel{fill:none;stroke:var(--pls-steel-hi);stroke-width:2}
+#pls-preview .pls-center-line{fill:none;stroke:var(--pls-line);stroke-width:1;stroke-dasharray:5 4}
+#pls-preview .pls-pressure-chamber{fill:var(--pls-accent);opacity:0}
+#pls-preview .pls-pipe-fitting{fill:var(--pls-steel-hi);stroke:var(--pls-steel);stroke-width:1}
+#pls-preview .pls-sensor-cutout{fill:none;stroke:var(--pls-accent);stroke-width:1}
+#pls-preview .pls-scale-detail{fill:none;stroke:var(--pls-steel);stroke-width:1}
+#pls-preview .pls-lcd-bezel{fill:var(--pls-steel);stroke:var(--pls-muted);stroke-width:1}
+#pls-preview .pls-lcd-gloss{fill:none;stroke:var(--pls-surface);stroke-width:1.5;opacity:.7}
+#pls-preview .pls-gauge-tick{fill:none;stroke:var(--pls-muted);stroke-width:1}
+#pls-preview .pls-control-knob{fill:var(--pls-steel-hi);stroke:var(--pls-muted);stroke-width:1}
+#pls-preview .pls-hx711-board{fill:var(--pls-soft);stroke:var(--pls-signal);stroke-width:1.3}
+#pls-preview .pls-chip{fill:var(--pls-muted)}
+#pls-preview .pls-chip-pins{fill:none;stroke:var(--pls-steel);stroke-width:1}
+#pls-preview .pls-motor-fin{fill:none;stroke:var(--pls-steel);stroke-width:1}
 #pls-preview .pls-scale{fill:var(--pls-soft);stroke:var(--pls-steel);stroke-width:1.5}
 #pls-preview .pls-scale-pan{fill:var(--pls-steel-hi);stroke:var(--pls-steel);stroke-width:1}
 #pls-preview .pls-digital-screen{fill:var(--pls-accent-soft)}
@@ -1721,14 +1781,21 @@ html&gt;body{padding:0}&lt;/style&gt;
 #pls-preview .pls-parts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px 8px;font-size:11px;color:var(--pls-muted);margin-top:13px}
 #pls-preview .pls-parts&gt;span{display:flex;gap:5px;align-items:center;min-width:0}
 #pls-preview .pls-parts b{color:var(--pls-text);border-radius:4px;background:var(--pls-surface);min-width:18px;text-align:center;padding:1px 3px;font-size:11px}
-#pls-preview .pls-frame-note{font-size:11px;color:var(--pls-muted);margin:12px 0 18px}
+#pls-preview .pls-frame-note{font-size:11px;color:var(--pls-muted);margin:12px 0 0;display:flex;justify-content:space-between;gap:5px 12px;flex-wrap:wrap}
+#pls-preview .pls-schematic-legend{display:flex;align-items:center;gap:8px 16px;flex-wrap:wrap;font-size:11px;color:var(--pls-muted);margin-top:15px}
+#pls-preview .pls-schematic-legend&gt;span{display:flex;align-items:center;gap:5px}
+#pls-preview .pls-air-key{width:16px;border-top:2px solid var(--pls-accent)}
+#pls-preview .pls-signal-key{width:16px;border-top:2px dashed var(--pls-signal)}
+#pls-preview .pls-exhaust-key{width:16px;border-top:2px solid var(--pls-exhaust)}
+#pls-preview .pls-force-key{color:var(--pls-accent);font-size:16px;line-height:1;width:16px;text-align:center}
+#pls-preview .pls-response-panel{grid-area:response;min-width:0;padding-top:14px;border-top:1px solid var(--pls-line)}
 #pls-preview .pls-response-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px;flex-wrap:wrap}
 #pls-preview .pls-chart-legend{display:flex;gap:12px;font-size:11px;color:var(--pls-muted)}
 #pls-preview .pls-chart-legend span{display:flex;align-items:center;gap:5px}
 #pls-preview .pls-measured-line{width:16px;height:0;border-top:2px solid var(--pls-accent)}
 #pls-preview .pls-target-line{width:16px;height:0;border-top:2px dashed var(--pls-muted)}
 #pls-preview .pls-response{width:100%;height:148px;display:block;overflow:visible}
-#pls-preview .pls-console{border-left:1px solid var(--pls-line);padding-left:24px;min-width:0}
+#pls-preview .pls-console{border-left:1px solid var(--pls-line);padding-left:24px;min-width:0;grid-area:console}
 #pls-preview .pls-setpoint-heading{display:flex;align-items:center;justify-content:space-between;margin-top:19px;gap:12px}
 #pls-preview .pls-setpoint-heading&gt;span{display:flex;align-items:center;gap:5px}
 #pls-preview #pls-target-number{width:76px;padding:6px 8px;text-align:right;background:var(--pls-surface);border:1px solid var(--pls-line);border-radius:7px;font-size:24px;font-weight:500;color:var(--pls-text);font-variant-numeric:tabular-nums}
@@ -1792,7 +1859,7 @@ html&gt;body{padding:0}&lt;/style&gt;
 #pls-preview #pls-back{margin-top:12px}
 #pls-preview .pls-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 @media(max-width:800px){#pls-preview .pls-workspace{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:18px}#pls-preview .pls-console{padding-left:18px}#pls-preview .pls-parts{grid-template-columns:repeat(2,minmax(0,1fr))}#pls-preview .pls-test-actions{flex-direction:column}#pls-preview .pls-readings strong{font-size:20px}#pls-preview .pls-reference-reading strong{font-size:25px}}
-@media(max-width:640px){#pls-preview .pls-header{padding:20px 18px 12px;align-items:flex-start;padding-right:90px}#pls-preview h1{font-size:20px}#pls-preview .pls-brand-symbol{display:none}#pls-preview .pls-eyebrow{font-size:10px;letter-spacing:.8px}#pls-preview .pls-subheader{padding:0 18px 15px}#pls-preview .pls-tabs{padding:0 8px;gap:0;justify-content:space-between}#pls-preview .pls-tab{padding:13px 8px;font-size:12px;gap:5px}#pls-preview .pls-tab svg{display:none}#pls-preview .pls-pane{padding:18px}#pls-preview .pls-workspace{display:flex;flex-direction:column-reverse;gap:25px}#pls-preview .pls-console{border:0;padding:0}#pls-preview .pls-console&gt;.pls-panel-heading{margin-bottom:8px}#pls-preview .pls-setpoint-heading{margin-top:8px}#pls-preview .pls-readings{gap:9px}#pls-preview .pls-readings strong{font-size:22px}#pls-preview .pls-reference-reading strong{font-size:28px}#pls-preview .pls-test-actions{flex-direction:row}#pls-preview .pls-parts{grid-template-columns:repeat(2,minmax(0,1fr));font-size:12px}#pls-preview .pls-model-grid{grid-template-columns:1fr;gap:22px}#pls-preview .pls-result-summary{grid-template-columns:1fr;gap:16px;margin:23px 0}#pls-preview .pls-result-summary&gt;div{display:flex;justify-content:space-between;align-items:center}#pls-preview .pls-result-summary span{margin:0}#pls-preview .pls-result-summary strong{font-size:22px}#pls-preview .pls-footer{padding:12px 18px}#pls-preview .pls-table{font-size:12px}#pls-preview .pls-table th,#pls-preview .pls-table td{padding:12px 9px}}
+@media(max-width:640px){#pls-preview .pls-header{padding:20px 18px 12px;align-items:flex-start;padding-right:90px}#pls-preview h1{font-size:20px}#pls-preview .pls-brand-symbol{display:none}#pls-preview .pls-eyebrow{font-size:10px;letter-spacing:.8px}#pls-preview .pls-subheader{padding:0 18px 15px}#pls-preview .pls-tabs{padding:0 8px;gap:0;justify-content:space-between}#pls-preview .pls-tab{padding:13px 8px;font-size:12px;gap:5px}#pls-preview .pls-tab svg{display:none}#pls-preview .pls-pane{padding:18px}#pls-preview .pls-workspace{grid-template-columns:minmax(0,1fr);grid-template-areas:&quot;machine&quot; &quot;console&quot; &quot;response&quot;;gap:24px}#pls-preview .pls-console{border:0;padding:18px 0 0;border-top:1px solid var(--pls-line)}#pls-preview .pls-console&gt;.pls-panel-heading{margin-bottom:8px}#pls-preview .pls-setpoint-heading{margin-top:8px}#pls-preview .pls-readings{gap:9px}#pls-preview .pls-readings strong{font-size:22px}#pls-preview .pls-reference-reading strong{font-size:28px}#pls-preview .pls-test-actions{flex-direction:row}#pls-preview .pls-parts{grid-template-columns:repeat(2,minmax(0,1fr));font-size:11px}#pls-preview .pls-model-grid{grid-template-columns:1fr;gap:22px}#pls-preview .pls-result-summary{grid-template-columns:1fr;gap:16px;margin:23px 0}#pls-preview .pls-result-summary&gt;div{display:flex;justify-content:space-between;align-items:center}#pls-preview .pls-result-summary span{margin:0}#pls-preview .pls-result-summary strong{font-size:22px}#pls-preview .pls-footer{padding:12px 18px}#pls-preview .pls-table{font-size:12px}#pls-preview .pls-table th,#pls-preview .pls-table td{padding:12px 9px}}
 @media(prefers-reduced-motion:reduce){#pls-preview .pls-button{transition:none}}
 &lt;/style&gt;
 
@@ -1852,6 +1919,7 @@ html&gt;body{padding:0}&lt;/style&gt;
     el(&#x27;cycles&#x27;).value = cycles;
     el(&#x27;target-force&#x27;).textContent = fmt(target*g,2) + &#x27; N&#x27;;
     el(&#x27;ideal-pressure&#x27;).textContent = &#x27;Tekanan ideal 20 kg: &#x27; + fmt(idealPressure(20),2) + &#x27; bar&#x27;;
+    el(&#x27;schematic-bore&#x27;).textContent = &#x27;Piston Ø&#x27;+diameter+&#x27; mm · asumsi&#x27;;
     root.querySelectorAll(&#x27;[data-target]&#x27;).forEach(b=&gt;b.setAttribute(&#x27;aria-pressed&#x27;,String(Number(b.dataset.target)===target)));
   }
 
@@ -1871,11 +1939,17 @@ html&gt;body{padding:0}&lt;/style&gt;
     el(&#x27;error&#x27;).textContent = &#x27;Selisih &#x27; + (error &gt;= .0005 ? &#x27;+&#x27; : &#x27;&#x27;) + fmt(error) + &#x27; kg&#x27;;
     el(&#x27;pressure&#x27;).textContent = fmt(pressure,2);
     el(&#x27;command&#x27;).textContent = &#x27;Target ideal &#x27; + fmt(idealPressure(target),2) + &#x27; bar&#x27;;
-    el(&#x27;scale-digital&#x27;).textContent = fmt(scale) + &#x27; kg&#x27;;
+    el(&#x27;scale-digital&#x27;).textContent = fmt(scale);
     el(&#x27;regulator-digital&#x27;).textContent = fmt(pressure,2) + &#x27; bar&#x27;;
+    el(&#x27;controller-digital&#x27;).textContent = fmt(target,1) + &#x27; kg&#x27;;
     const travel = mode === &#x27;running&#x27; || mass &gt; .01 ? 10 : 0;
     el(&#x27;moving-head&#x27;).setAttribute(&#x27;transform&#x27;,&#x27;translate(0 &#x27;+travel.toFixed(2)+&#x27;)&#x27;);
+    el(&#x27;loadcell-signal&#x27;).setAttribute(&#x27;d&#x27;,&#x27;M245 &#x27;+(218+travel)+&#x27;H399V260H415&#x27;);
     el(&#x27;piston&#x27;).setAttribute(&#x27;y&#x27;,108+travel);
+    el(&#x27;inner-rod&#x27;).setAttribute(&#x27;y&#x27;,118+travel);
+    el(&#x27;inner-rod&#x27;).setAttribute(&#x27;height&#x27;,50-travel);
+    el(&#x27;pressure-chamber&#x27;).setAttribute(&#x27;height&#x27;,9+travel);
+    el(&#x27;pressure-chamber&#x27;).style.opacity = String(clamp(pressure/6,0,.5));
     el(&#x27;force-arrow&#x27;).setAttribute(&#x27;opacity&#x27;,mass&gt;.1 ? 1 : 0);
     const angle = -140 + clamp(pressure/6,0,1)*280;
     const rad = (angle-90)*Math.PI/180;
@@ -2027,7 +2101,7 @@ html&gt;body{padding:0}&lt;/style&gt;
   el(&#x27;back&#x27;).addEventListener(&#x27;click&#x27;,()=&gt;showPane(&#x27;tool&#x27;));
   window.addEventListener(&#x27;openai:set_globals&#x27;,e=&gt;{const s=e.detail?.globals?.widgetState;if(!s || interval)return;restore(s);scale=offset-tareOffset;syncInputs();updateResults();showPane(pane,false);render();});
   window.addEventListener(&#x27;pagehide&#x27;,stopInterval);
-  new ResizeObserver(()=&gt;{drawChart();const width=root.querySelector(&#x27;.pls-machine&#x27;).getBoundingClientRect().width;const factor=600/Math.max(260,width);root.querySelectorAll(&#x27;.pls-device-number text&#x27;).forEach(node=&gt;node.style.fontSize=(Math.min(24,12*factor))+&#x27;px&#x27;);if(width&lt;430){el(&#x27;scale-digital&#x27;).style.display=&#x27;none&#x27;;el(&#x27;regulator-digital&#x27;).style.display=&#x27;none&#x27;;root.querySelectorAll(&#x27;.pls-small-digital&#x27;).forEach(node=&gt;node.style.display=&#x27;none&#x27;);}else{el(&#x27;scale-digital&#x27;).style.display=&#x27;&#x27;;el(&#x27;regulator-digital&#x27;).style.display=&#x27;&#x27;;root.querySelectorAll(&#x27;.pls-small-digital&#x27;).forEach(node=&gt;node.style.display=&#x27;&#x27;);}}).observe(root);
+  new ResizeObserver(()=&gt;{drawChart();const width=root.querySelector(&#x27;.pls-machine&#x27;).getBoundingClientRect().width;const factor=600/Math.max(260,width);root.querySelectorAll(&#x27;.pls-device-number text&#x27;).forEach(node=&gt;node.style.fontSize=(Math.min(26,12*factor))+&#x27;px&#x27;);root.querySelectorAll(&#x27;.pls-small-digital&#x27;).forEach(node=&gt;{node.style.display=width&lt;430?&#x27;none&#x27;:&#x27;&#x27;;});}).observe(root);
   scale=offset-tareOffset;syncInputs();updateResults();showPane(pane,false);render();
   const design={annotations:true};
   if(globalThis.Tweak){const tweak=new Tweak({container:root,onChange:()=&gt;{root.querySelector(&#x27;.pls-parts&#x27;).hidden=!design.annotations;root.querySelector(&#x27;.pls-device-number&#x27;).style.display=design.annotations?&#x27;&#x27;:&#x27;none&#x27;;}});tweak.addToggle(design,&#x27;annotations&#x27;,{label:&#x27;Nama komponen&#x27;});}
