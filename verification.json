@@ -1,0 +1,71 @@
+{
+  "regressions": [
+    {
+      "test": "test_core.py",
+      "exit_code": 0,
+      "output": "{\n  \"eight_components\": \"all selectable; keyboard hotspot works\",\n  \"magnification\": \"all/mechanical/electronics and dialog return verified\",\n  \"target_validation\": \"0\\u201320 kg clamps; zero cannot start\",\n  \"target_20kg\": {\n    \"mass\": 20.00188722766247,\n    \"scale\": 20.039337269595475,\n    \"pressure\": 2.4396505788185228,\n    \"stable\": true\n  },\n  \"emergency\": \"vents zero, save disabled, explicit reset remains idle\",\n  \"tare\": \"unloaded scale offset zeroed\",\n  \"sound_toggle\": \"passed\",\n  \"csv\": \"one saved record; notice + headers + row\",\n  \"persistence\": \"saved records and active tab survive; load does not restart\",\n  \"browser_errors\": []\n}\n",
+      "errors": ""
+    },
+    {
+      "test": "test_auto.py",
+      "exit_code": 0,
+      "output": "{\n  \"automatic_targets\": [\n    5,\n    10,\n    15,\n    20,\n    5,\n    10,\n    15,\n    20,\n    5,\n    10,\n    15,\n    20\n  ],\n  \"record_count\": 12,\n  \"distinct_load_cycles\": 12,\n  \"max_reference_error_kg\": 0.029726966321703685,\n  \"simulation_time_s\": 166.9999999999948,\n  \"unloaded_at_completion\": true,\n  \"export_data_rows\": 12,\n  \"browser_errors\": []\n}\n",
+      "errors": ""
+    }
+  ],
+  "layouts": [
+    {
+      "viewport": 1600,
+      "page_width": 1600,
+      "min_component_height": 46,
+      "min_package_height": 80
+    },
+    {
+      "viewport": 1440,
+      "page_width": 1440,
+      "min_component_height": 46,
+      "min_package_height": 80
+    },
+    {
+      "viewport": 1366,
+      "page_width": 1366,
+      "min_component_height": 46,
+      "min_package_height": 80
+    },
+    {
+      "viewport": 1024,
+      "page_width": 1024,
+      "min_component_height": 46,
+      "min_package_height": 80
+    },
+    {
+      "viewport": 768,
+      "page_width": 768,
+      "min_component_height": 46,
+      "min_package_height": 80
+    },
+    {
+      "viewport": 390,
+      "page_width": 390,
+      "min_component_height": 46,
+      "min_package_height": 80
+    },
+    {
+      "viewport": 360,
+      "page_width": 360,
+      "min_component_height": 46,
+      "min_package_height": 80
+    }
+  ],
+  "contrast_ratios": {
+    "body": 15.803888075416689,
+    "secondary": 8.27408776890429,
+    "button": 9.994090839643228,
+    "apparatus labels": 11.806069882569576,
+    "package details": 6.829603398661441
+  },
+  "design_audit": {
+    "slop_score": 0,
+    "rationale": "Operate-first apparatus and selection flow. Warm orange chosen for requested top-up style; no marketing hero, feature grid, glass surface or decorative statistics."
+  }
+}
